@@ -101,7 +101,7 @@
   
 - Check pods(pods jo create hue h Argocd install krne k bd) in Argo CD namespace:
   ```bash
-  kubectl get svc -n argocd
+  kubectl get pods -n argocd
   ```
 
 
