@@ -98,13 +98,19 @@
   ```bash
   kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
   ```
+  
+- Check pods(pods jo create hue h Argocd install krne k bd) in Argo CD namespace:
+  ```bash
+  kubectl get svc -n argocd
+  ```
+
 
 - Check services in Argo CD namespace:
   ```bash
   kubectl get svc -n argocd
   ```
 
-- Expose Argo CD server using NodePort:
+- Expose Argo CD server using NodePort(hmko UI access krna h argocd ka to argocd k argocd-server ko expose krna pdega):
   ```bash
   kubectl patch svc argocd-server -n argocd -p '{"spec": {"type": "NodePort"}}'
   ```
