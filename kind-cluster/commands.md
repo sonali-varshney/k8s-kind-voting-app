@@ -133,7 +133,7 @@
 
 ## 8. Installing Kubernetes Dashboard
 
-- Deploy Kubernetes dashboard:
+- Deploy Kubernetes dashboard: isse 1 service create hogi jo ki ClusterIP type ki hogi..port forwarding kr k we cn access it in browser.but usme login krne k liye to we need a user and passwrd
   ```bash
   kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.7.0/aio/deploy/recommended.yaml
   ```
