@@ -142,6 +142,7 @@
   ```bash
   kubectl -n kubernetes-dashboard create token admin-user
   ```
+- Now to access the dashboard, do port forwarding
 
 ---
 
